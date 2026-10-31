@@ -1,35 +1,36 @@
-if not game:IsLoaded()then game.Loaded:Wait()end;do ("Hosted by Flow Enchantments. JNKIE Game Loader - Unauthorized tampering or debugging of protected scripts is strictly prohibited and may result in a global blacklist from JNKIE protected scripts."):sub(1,1);do local c={PlaceId=game.PlaceId,GameId=game.GameId,Key=getgenv().SCRIPT_KEY or SCRIPT_KEY};local a,r=pcall(function(...)
+if not game:IsLoaded()then game.Loaded:Wait()end;do ("Powered by Flow Enchantments run by: JNKIE Game Loader - Unauthorized tampering or debugging of protected scripts is strictly prohibited and may result in a global blacklist from JNKIE protected scripts."):sub(1,1);do local c={PlaceId=game.PlaceId,GameId=game.GameId,Key=getgenv().SCRIPT_KEY or SCRIPT_KEY};local a,r=pcall(function(...)
 local ctx = ctx.PlaceId
 local gtx = ctx.GameId
 local ktx = ctx.Key
 local Players = game:GetService("Players")
-local player = Player.LocalPlayer
+local player = Players.LocalPlayer
 
 if ctx and gtx then
  print("Game Checked: True")
 else
-player:kick("Unsupported Game detected or  CTX/GTX FAILED. Error Code: 404 (Unsupported) or 204 (CTX/GTX Failed)")
+player:kick("Unsupported | CTX/GTX FAILED")
 end
-end,c);if not a then warn(r)elseif r==false then return end end;local S,P,G={"ee7abee1d24a0017ecc25d37cb759b8082a2cdd6c1071c1ecdee39def84b5c17"},{[17625359962]=1},{[17625359962]=1};local i=P[game.PlaceId]or G[game.GameId];if not i then local h="This game is an unsupported game. See our supported games: .gg/M7g5GG5M29";warn(h);task.spawn(function()pcall(function()game:GetService("Players").LocalPlayer:Kick(h)end);task.wait();pcall(function()local p=game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ErrorPrompt;p.TitleFrame.ErrorTitle.Text="Unsupported Game";p.MessageArea.ErrorFrame.ErrorMessage.Text=h end)end);return end;
+end,c);if not a then warn(r)elseif r==false then return end end;local S,P,G={"ee7abee1d24a0017ecc25d37cb759b8082a2cdd6c1071c1ecdee39def84b5c17"},{[17625359962]=1,[71874690745115]=1,[117398147513099]=1,[129604661913557]=1,[133215910299950]=1},{[6035872082]=1};local i=P[game.PlaceId]or G[game.GameId];if not i then local h="This game is an unsupported game. See our supported games: .gg/M7g5GG5M29";warn(h);task.spawn(function()pcall(function()game:GetService("Players").LocalPlayer:Kick(h)end);task.wait();pcall(function()local p=game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ErrorPrompt;p.TitleFrame.ErrorTitle.Text="Unsupported Game";p.MessageArea.ErrorFrame.ErrorMessage.Text=h end)end);return end;
 
 local Sigil = loadstring(game:HttpGet("https://cdn.jnkie.com/SigilUI.lua"))()
 
 Sigil.Appearance = {
-    Title           = "Flow Enchantments - Free Build",
-    Subtitle        = "Enter your given key or get a key from our discord",
-    KeylessTitle    = "Flow Enchantments - Free Build",
-    KeylessSubtitle = "No Key needed anymore! You are verified.",
-    Icon = "", 
+    Title           = "Flow Enchantments - Free",
+    Subtitle        = "Enter your given key to continue. Dont have one? Grab one from our discord server.",
+    KeylessTitle    = "Flow Enchantments - Free / Keyless",
+    KeylessSubtitle = "Key System has been disabled, Hooray! You're in (verified).",
+    Icon = "",
 }
 
-Sigil.Links.Discord = "discord.gg/M7g5GG5M29"
-Sigil.Storage.FileName = "JnkieKeySystemFlow.envstorage"
+Sigil.Links.Discord = "discord.gg/h3Tfacj3xS"
+Sigil.Storage.FileName = "EnchantedSystem"
+
 
 Sigil.Shop = {
     Enabled = true,
     Icon = "",
     Title = "Get Premium",
-    Subtitle = "Best Script, better with premium • 24/7 support",
+    Subtitle = "Premium | A whole other premium experience. Better than free, smoother and cleaner.",
     ButtonText = "Buy",
     Link = "enchantmentsfe.sell.app"
 }
